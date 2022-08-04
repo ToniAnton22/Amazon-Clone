@@ -1,3 +1,4 @@
+import Product from 'Product'
 import React from 'react'
 import './Home.css'
 
@@ -8,19 +9,24 @@ function Home() {
             <img className="home__image" 
                 src="images/amazon.jpg"
                 alt="" />
+             <div className="home__row">
+                <Product title="lean start" price ={29.99} image="images/logo192.png" rating={4} />
+                <Product title="lean start" price ={29.99} image="images/logo192.png" rating={4} />
+                {/* 2 Products */}
+            </div>
+            
+            <div className="home__row">
+                <Product title="lean start" price ={29.99} image="images/logo192.png" rating={4} />
+                <Product title="lean start" price ={29.99} image="images/logo192.png" rating={4} />
+                <Product title="lean start" price ={29.99} image="images/logo192.png" rating={4} />
+            </div>
+            
+            <div className="home__row">
+                <Product title="lean start" price ={29.99} image="images/logo192.png" rating={4} />
+            </div>
         </div>
         {/* modify this to have a different number of rows */}
-        <div className="home__row">
-            {/* 2 Products */}
-        </div>
-        
-        <div className="home__row">
-            {/* 3 Products */}
-        </div>
-        
-        <div className="home__row">
-            {/* 1 Products */}
-        </div>
+       
     </div>
   )
 }
